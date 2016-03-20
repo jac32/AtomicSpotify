@@ -10,3 +10,5 @@
   'ctrl-j': 'spotify:play-prev',
   'ctrl-;': 'spotify:play-next',
   'ctrl-l': 'spotify:play-pause'
+  'alt-shift-up': 'spotify:increase-volume'
+  'alt-shift-down': 'spotify:decrease-volume'

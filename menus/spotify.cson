@@ -28,6 +28,14 @@
     {
       'label': 'Search spotify for the selection'
       'command': 'spotify:search-selection'
+    },
+    {
+      'label': 'Increase Volume'
+      'command': 'spotify:increase-volume'
+    },
+    {
+      'label': 'Decrease Volume'
+      'command': 'spotify:decrease-volume'
     }
   ]
 'menu': [
@@ -63,6 +71,14 @@
         {
           'label': 'Search for selection'
           'command': 'spotify:search-selection'
+        },
+        {
+          'label': 'increase volume'
+          'command': 'spotify:increase-volume'
+        },
+        {
+          'label': 'decrease volume'
+          'command': 'spotify:decrease-volume'
         }
       ]
     ]

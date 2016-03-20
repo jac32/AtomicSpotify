@@ -28,6 +28,12 @@ module.exports = Spotify =
     @subscriptions.add atom.commands.add 'atom-workspace', 'spotify:toggle-verbosity': => control.toggleVebosity()
     @subscriptions.add atom.commands.add 'atom-workspace', 'spotify:play-selection': => playSelection()
     @subscriptions.add atom.commands.add 'atom-workspace', 'spotify:search-selection': => searchSelection()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'spotify:increase-volume': => control.incVol()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'spotify:decrease-volume': => control.decVol()
+
+    setInterval control.checkTrack, 1000
+
+
 
   deactivate: ->
     @subscriptions.dispose()
