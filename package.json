@@ -1,0 +1,21 @@
+{
+  "name": "spotify",
+  "main": "./lib/spotify",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "spotify:current-track"
+  },
+  "repository": "https://github.com/atom/spotify",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "applescript": "*",
+    "moment": "*",
+    "spotify-web-api-node": "*"
+  }
+}

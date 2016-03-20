@@ -1,0 +1,70 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Current spotify track'
+      'command': 'spotify:current-track'
+    },
+    {
+      'label': 'Play/Pause spotify track'
+      'command': 'spotify:play-pause'
+    },
+    {
+      'label': 'Play next spotify track'
+      'command': 'spotify:play-next'
+    },
+    {
+      'label': 'Play previous spotify track'
+      'command': 'spotify:play-prev'
+    },
+    {
+      'label': 'Toggle verbose track info'
+      'command': 'spotify:toggle-verbosity'
+    },
+    {
+      'label': 'Play selected track URI'
+      'command': 'spotify:play-selection'
+    },
+    {
+      'label': 'Search spotify for the selection'
+      'command': 'spotify:search-selection'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'spotify'
+      'submenu': [
+        {
+          'label': 'current track'
+          'command': 'spotify:current-track'
+        }
+        {
+          'label': 'play/pause'
+          'command': 'spotify:play-pause'
+        },
+        {
+          'label': 'play next'
+          'command': 'spotify:play-next'
+        },
+        {
+          'label': 'play previous'
+          'command': 'spotify:play-prev'
+        },
+        {
+          'label': 'toggle verbosity'
+          'command': 'spotify:toggle-verbosity'
+        },
+        {
+          'label': 'play selected uri'
+          'command': 'spotify:play-selection'
+        },
+        {
+          'label': 'Search for selection'
+          'command': 'spotify:search-selection'
+        }
+      ]
+    ]
+  }
+]
