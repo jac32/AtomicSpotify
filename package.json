@@ -6,7 +6,15 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "spotify:current-track"
+
+    "atom-workspace": ["spotify:current-track",
+                        "spotify:play-pause",
+                        "spotify:play-next",
+                        "spotify:play-prev",
+                        "spotify:play-selection",
+                        "spotify:search-selection",
+                        "spotify:toggle-verbosity"]
+
   },
   "repository": "https://github.com/atom/spotify",
   "license": "MIT",

@@ -31,6 +31,7 @@ module.exports = Spotify =
 
   deactivate: ->
     @subscriptions.dispose()
+    @spotifyView.destroy()
 
 
 playSelection = ->

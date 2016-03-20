@@ -33,6 +33,7 @@ module.exports = control =
     script = HEAD + 'playpause'
     execScript(script).then (rst) ->
       atom.notifications.addSuccess 'Toggling Play/Pause'
+      trackDetails()
     , (err) ->
       atom.notifications.addError 'Play/Pause failed'
 
@@ -44,13 +45,13 @@ module.exports = control =
     , (err) ->
       atom.notifications.addError 'Could not play next track'
 
-    playPrev: ->
-      script = HEAD + 'play prev track'
-      execScript(script).then (rst) ->
-        atom.notifications.addSuccess 'Playing previous track...'
-        trackDetails()
-      , (err) ->
-        atom.notifications.addError 'Could not play previous track'
+  playPrev: ->
+    script = HEAD + 'play previous track'
+    execScript(script).then (rst) ->
+      atom.notifications.addSuccess 'Playing previous track...'
+      trackDetails()
+    , (err) ->
+      atom.notifications.addError 'Could not play previous track'
 
 trackDetails = ->
   execScript(detailScript 'name').then (name) ->
