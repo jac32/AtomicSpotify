@@ -21,3 +21,11 @@ The following commands are added to the command palette:
 
 
 NOTE: This plugin will *only* work on OS X
+
+## Installation
+```
+git clone https://github.com/jac32/AtomicSpotify
+cd AtomicSpotify
+apm link
+npm install
+```
