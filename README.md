@@ -1,13 +1,23 @@
-# spotify package
+# A Simple Spotify Client in Atom
 
-A short description of your package.
+AtomicSpotify allows you to interact with the Spotify client without leaving the atom text editor.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+The following commands are added to the command palette:
 
-spotify:track:51pQ7vY7WXzxskwloaeqyj
-spotify:track:4g3Ax56IslQkI6XVfYKVc5
-spotify:track:6csLL0MBNVIMx19PfsKsW7
+    
+  
+  - `Spotify: Current Track'`
+  - `Spotify: Play/Pause`
+  - `Spotify: Play Next`
+  - `Spotify: Play Prev`
+  - `Spotify: Play Selection`
+  - `Spotify: Search Selection`
+  - `Spotify: Increase Volume`
+  - `Spotify: Decrease Volume`
+    
+  The output verbosity for all of these commands can be toggled with:
+  
+    `Spotify: Toggle Verbosity`
 
-kendrick
 
-elvis
+NOTE: This plugin will *only* work on OS X
